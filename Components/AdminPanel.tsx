@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Switch } from "@/components/ui/switch"
-import { Label } from "@/components/ui/label"
-import { Slider } from "@/components/ui/slider"
-import { Settings, LogOut } from 'lucide-react'
+import React, { useState } from 'react';
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Textarea } from "../components/ui/textarea";
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select";
+import { Switch } from "../components/ui/switch";
+import { Label } from "../components/ui/label";
+import { Slider } from "../components/ui/slider";
+import { Settings, LogOut } from 'lucide-react';
 
 export default function AdminPanel() {
-  const [activeTab, setActiveTab] = useState('general')
+  const [activeTab, setActiveTab] = useState('general');
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -46,7 +46,7 @@ export default function AdminPanel() {
               <TabsTrigger value="payout">Payout</TabsTrigger>
               <TabsTrigger value="security">Security</TabsTrigger>
             </TabsList>
-            
+
             <TabsContent value="general">
               <Card>
                 <CardHeader>
@@ -82,7 +82,7 @@ export default function AdminPanel() {
                 </CardContent>
               </Card>
             </TabsContent>
-            
+
             <TabsContent value="url">
               <Card>
                 <CardHeader>
@@ -122,7 +122,7 @@ export default function AdminPanel() {
                 </CardContent>
               </Card>
             </TabsContent>
-            
+
             <TabsContent value="ads">
               <Card>
                 <CardHeader>
@@ -158,7 +158,7 @@ export default function AdminPanel() {
                 </CardContent>
               </Card>
             </TabsContent>
-            
+
             <TabsContent value="payout">
               <Card>
                 <CardHeader>
@@ -203,7 +203,7 @@ export default function AdminPanel() {
                 </CardContent>
               </Card>
             </TabsContent>
-            
+
             <TabsContent value="security">
               <Card>
                 <CardHeader>
@@ -250,5 +250,5 @@ export default function AdminPanel() {
         </div>
       </main>
     </div>
-  )
+  );
 }
